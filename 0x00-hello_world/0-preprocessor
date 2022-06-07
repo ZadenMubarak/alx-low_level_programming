@@ -1,6 +1,11 @@
 #/bin/bash
 
-CFILE = $1
-gcc "$CFILE.c" -o "$CFILE"
-chmod +x "$CFILE"
-./"$CFILE"
+# CFILE = $1
+# gcc "$CFILE.c" -o "$CFILE"
+# chmod +x "$CFILE"
+# ./"$CFILE"
+
+
+gcc main.c -o main
+chmod +x main
+echo `./main `
