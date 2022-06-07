@@ -1,2 +1,6 @@
 #/bin/bash
-gcc main.c -o main;chmod +x main;./main
+
+CFILE = $1
+gcc "$CFILE.c" -o "$CFILE"
+chmod +x "$CFILE"
+./"$CFILE"
