@@ -1,11 +1,7 @@
 #/bin/bash
 
-# CFILE = $1
-# gcc "$CFILE.c" -o "$CFILE"
-# chmod +x "$CFILE"
-# ./"$CFILE"
+# gcc main.c -o main
+# chmod +x main
+# echo `./main `
 
-
-gcc main.c -o main
-chmod +x main
-echo `./main `
+export CFILE=0-main.c ; ./0-preprocessor
